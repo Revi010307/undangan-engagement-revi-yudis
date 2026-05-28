@@ -29,15 +29,14 @@
         body {
             font-family: 'Poppins', sans-serif;
 
-            /* SATU FOTO UNTUK SEMUA HALAMAN */
             background:
                 linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)),
                 url('Bunga.jpg');
 
             background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
+            background-position: center top;
             background-repeat: no-repeat;
+            background-attachment: scroll;
 
             color: #e6a00b;
             overflow-x: hidden;
@@ -528,10 +527,7 @@
 
             </form>
 
-            <!-- TEMPAT UCAPAN -->
-            <div id="wishList"></div>
 
-        </div>
 
     </section>
     <!-- TEMPAT UCAPAN -->
@@ -594,7 +590,7 @@
         const to = urlParams.get('to');
 
         if (to) {
-            document.getElementById('guestName').innerText = to; YUDIS
+            document.getElementById('guestName').innerText = to;
         }
 
 
